@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+
+}
+.content{
+    margin-top: 60px;
+    display: flex;
+    background-color: cornflowerblue;
+}
+.ab{
+    color: #1f1f25;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: inherit;
+    margin-left: 550px;
+    letter-spacing: 3px;
+    width: 40%;
+}
+.btn{
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 100px;
+    text-decoration: none;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+.hr{
+    background-color:white;
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 100px;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+.name{
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 10px;
+}
+h1 .me{
+    color: #fd4766;
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+img{
+    width: 70px;
+    height: 100px;
+    margin-left: 70px;
+}
