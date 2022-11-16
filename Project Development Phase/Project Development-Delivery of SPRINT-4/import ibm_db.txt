@@ -1,0 +1,26 @@
+import ibm_db
+dsn_hostname = "2d46b6b4-cbf6-40eb-bbce-6251e6ba0300.bs2io90l08kqb1od8lcg.databases.appdomain.cloud" # "dashdb-txn-sbox-yp-dal09-04. services.dal.bluemix.net"
+dsn uid = "rvl70320""# "abc12345"
+dsn_pwd = "RMAKYfhFtGdyfFMY"# "7dBZ3wWt9XN6$00J"
+dsn driver = "{IBM DB2 ODBC DRIVER}"
+dsn database = "BLUDB"
+dsn_port = "32328"# "BLUDB"# "32328"
+dsn_protocol = "TCPIP"# "TCPIP"
+dsn (
+"DRIVER={0};"
+"DATABASE={1};"
+"HOSTNAME={2);"
+"PORT={3};"
+"PROTOCOL={4};"
+"UID={5};"
+"PWD={6};").format(dsn_driver, dsn_database, dsn_hostname, dsn_port, dsn_protocol, dsn_uid, dsn_pwd)
+print(dsn)
+dsn (
+"DRIVER={0};"
+"DATABASE={1};"
+"HOSTNAME={2);"
+"PORT={3};"
+"PROTOCOL={4};"
+"UID={5};"
+"PWD={6};").format(dsn_driver, dsn_database, dsn_hostname, dsn_port, dsn_protocol, dsn_uid, dsn_pwd)
+print(dsn)
