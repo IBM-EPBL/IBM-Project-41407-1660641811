@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Login page</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='registerstyle.css')}}">
+        <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "65c01ed6-9fc1-4883-979a-3676279ebe44", // The ID of this integration.
+              region: "us-south", // The region your integration is hosted in.
+              serviceInstanceID: "8fcd017f-a192-420a-aafc-18cb0330efca", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+                });
+          </script>
+    </head>
+    <body>
+        <header>
+        <nav class="navbar">
+            <ul>
+               <li><a href="{{url_for('welcome_page')}}">Back to page</a></li>
+            </ul>
+        </nav>
+        </header>
+        <section id="sss1">
+            <center><h1 class="two" >Job Recommender</h1></center>
+        </section>
+        <br><br>
+        <div class="container"> <br /><br />
+        <form action="/login" method="POST">
+         <h1>Login</h1> <br /><br />
+            <label class="form_label"for="email"><b>Username</b></label><br><br>
+            <input class="form_input"type="text" name= "username" /><br><br>
+            <label class="form_label"for="psw"><b>Password</b></label><br><br>
+            <input class="form_input"type="password" name="password"/>
+            </br></br></br>
+            <center><input type="submit" class="submitbtn"value="submit" /></center>
+        </form>
+        </div>
+        <center><p>Forgot your password? <a href="{{url_for('forget')}}">Try Another Way</a></p></center>
+        <center><p>Don't have a account <a href="{{url_for('register')}}">Create new account</a></p></center>
+    </body>
+</html>
